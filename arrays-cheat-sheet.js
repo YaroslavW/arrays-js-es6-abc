@@ -115,18 +115,89 @@ scores.shift() //returns 87
 //scores now equals [43, 88, 99]
 
 
+// ==>slice()
+let scores = [87, 43, 88 99]
+
+scores.slice(1,3)
+//returns [43,88]
+
+
+// ==>some()
+let scores = [87, 43, 88, 99]
+
+scores.some((x) => {return x < 50}) //returns true
+scores.some((x) => {return x < 40}) //returns false
+
+
+// ==>sort()
+let scores = [87, 43, 88, 99]
+
+scores.sort() //returns [43, 87, 88, 99]
+scores.sort((a,b) => {return b - a}) // returns [99, 88, 87, 43]
+
+
+// ==>splice()
+let scores = [87, 43, 88, 99]
+
+scores.splice(2, 0, 95) //returns []
+
+//scores now equals [87, 43, 95, 88, 99]
+
+let counts = [1, 2, 3, 4, 5]
+
+counts.splice(1, 3) //returns [2,3,4]
+
+//scores now equals [1,5]
+
+
+// ==>toString()
+let scores = [87, 43, 95, 88, 99]
+
+scores.toString()
+//returns '87,43,95,88,99'
+
+
+// ==>unshift()
+let scores = [87, 43, 95, 88, 99]
+
+scores.unshift(50,70) //returns 7
+//scores now equals [50, 70, 87, 43, 95, 88, 99]
 
 
 
+// ==>find()
+let scores = [87, 43, 95, 88, 99]
+
+scores.find((x) => {return x > 90})
+//returns 95
 
 
+// ==>findIndex()
+let scores = [87, 43, 95, 88, 99]
+
+scores.findIndex((x) => {return x > 90})
+//returns 2
 
 
+// ==>entries()
+let scores = [87, 43, 95, 88, 99]
+
+var entries = scores.entries()
+
+console.log(entries.next().value) //returns [0, 87]
+console.log(entries.next().value) //returns [1, 43]
 
 
+// ==>from()
+let nameArray = Array.from('Sam')
+
+console.log(nameArray)
+//logs ['S', 'a', 'm']
 
 
+// ==>keys()
+let scores = [87, 43, 95, 88, 99]
+let iterator = scores.keys();
 
-
-
-
+console.log(iterator.next())
+//logs {value: 0, done: false}
