@@ -54,6 +54,66 @@ let scores = [87, 43, 88, 99]
 scores.indexOf(88) //returns 2
 scores.indexOf(103) // returns -1
 
+// ==>join()
+let scores = [87, 43, 88, 99]
+
+scores.join() //returns "87,43,88,99"
+scores.join("|") //returns "87|43|88|99"
+
+// ==>lastIndexOf()
+let scores = [87, 43, 88, 99, 88]
+
+scores.lastIndexOf(88) //returns 4
+scores.lastIndexOf(11) //returns -1
+
+// ==>map()
+let scores = [87, 43, 88, 99]
+
+scores.map((x) => {return x + 10})
+//returns [97, 53, 98, 109]
+
+
+// ==>pop()
+let scores = [87, 43, 88, 99]
+
+scores.pop() //returns 99
+//scores now equals [87, 43, 88]
+
+
+// ==>push()
+let scores = [87, 43, 88, 99]
+
+scores.push(44) //returns 5
+//scores now equals [87, 43, 88, 99, 44]
+
+
+// ==>reduce()
+let count = [1,2,3,4]
+
+count.reduce((a,b) => {return a + b})
+//returns 10
+
+
+// ==>reduceRight()
+let count = [1,2,3,4]
+
+count.reduceRight((a,b) => {return a - b})
+//returns -2
+
+
+// ==>reverse()
+let scores = [87, 43, 88, 99]
+
+scores.reverse()
+//returns [99, 88, 43, 87]
+
+
+// ==>shift()
+let scores = [87, 43, 88, 99]
+
+scores.shift() //returns 87
+//scores now equals [43, 88, 99]
+
 
 
 
