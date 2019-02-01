@@ -116,7 +116,7 @@ scores.shift() //returns 87
 
 
 // ==>slice()
-let scores = [87, 43, 88 99]
+let scores = [87, 43, 88, 99]
 
 scores.slice(1,3)
 //returns [43,88]
